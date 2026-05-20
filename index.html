@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>La Cebada | Ritual Matero</title>
+  <meta name="description" content="Mates torpedos y bombillones de primera calidad. Comprá online, armá tu carrito y coordiná pago y envío por WhatsApp con respuesta en el mismo día." />
+  <link rel="canonical" href="https://www.lacebada.com.ar/" />
+  <meta property="og:title" content="La Cebada | Ritual Matero" />
+  <meta property="og:description" content="Mates premium para tu ritual diario. Productos seleccionados, envíos a todo el país y atención por WhatsApp en el día." />
+  <meta property="og:url" content="https://www.lacebada.com.ar/" />
+  <meta property="og:image" content="https://www.lacebada.com.ar/assets/logo-la-cebada.png" />
+  <meta name="theme-color" content="#4f2919" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="topbar">
+      <div class="container topbar-inner">
+        <span>Precios imperdibles por apertura</span>
+        <span>Respuesta por WhatsApp en el mismo día, cualquier día de la semana.</span>
+      </div>
+    </div>
+
+    <nav class="nav container" aria-label="Navegación principal">
+      <a href="#inicio" class="brand">
+        <img src="assets/logo-la-cebada.png" alt="Logo La Cebada" class="brand-logo" />
+        <div>
+          <strong>La Cebada</strong>
+          <span>Ritual Matero</span>
+        </div>
+      </a>
+
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-links">
+        <a href="#productos">Productos</a>
+        <a href="#quienes-somos">Quiénes somos</a>
+        <a href="#por-que">Por qué elegirnos</a>
+        <a href="#faq">Preguntas frecuentes</a>
+        <a href="#contacto">Contacto</a>
+        <button class="cart-button icon-cart-button" type="button" id="openCartButton" aria-label="Abrir carrito">
+          <img src="assets/cart-icon.png" alt="" />
+          <span id="cartCount">0</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-overlay"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Mates y bombillones de primera calidad</p>
+          <h1>Mates premium para tu ritual diario.</h1>
+          <p class="hero-subtitle">Tradición argentina con una estética rústica, artesanal y actual.</p>
+          <p class="hero-text">
+            En La Cebada seleccionamos productos con carácter, terminaciones cuidadas y una presencia fuerte para acompañar cada ronda.
+            Armá tu carrito y después coordinamos el pago y el envío por WhatsApp.
+          </p>
+          <div class="hero-actions">
+            <a href="#productos" class="btn">Ver productos</a>
+            <a href="#contacto" class="btn btn-ghost">Hablar por WhatsApp</a>
+          </div>
+          <div class="hero-badges">
+            <span>Envíos a todo el país</span>
+            <span>Correo Argentino</span>
+            <span>Transferencia bancaria</span>
+          </div>
+        </div>
+
+        <article class="hero-feature-card">
+          <div class="hero-feature-top">
+            <span class="badge">Producto destacado</span>
+            <span class="price">$60.000</span>
+          </div>
+          <img src="assets/torpedo-suela.png" alt="Mate Torpedo cincelado joyero color suela" class="hero-product-image zoomable" data-zoom-src="assets/torpedo-suela.png" />
+          <div class="hero-feature-content">
+            <h2>Torpedo cincelado joyero</h2>
+            <p>Disponible en suela, borravino, chocolate y negro.</p>
+            <a href="#productos" class="mini-link">Elegir color</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section info-strip">
+      <div class="container info-strip-grid">
+        <div>
+          <strong>Compra simple</strong>
+          <p>Agregá productos al carrito, completá tus datos y finalizá la compra por WhatsApp.</p>
+        </div>
+        <div>
+          <strong>Atención personalizada</strong>
+          <p>Te respondemos en el mismo día para resolver pagos, envíos o cualquier duda.</p>
+        </div>
+        <div>
+          <strong>Stock controlado</strong>
+          <p>Si un producto se agota, queda marcado como “sin stock” y no puede agregarse al pedido.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="productos">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Catálogo</p>
+          <h2>Nuestros productos</h2>
+          <p>
+            Hoy trabajamos con un mate torpedo premium y dos tipos de bombillones. Elegí la variante que más te guste y sumala al carrito.
+          </p>
+        </div>
+
+        <div class="catalog-grid">
+          <article class="product-card" data-product-type="mate">
+            <div class="product-gallery">
+              <div class="image-wrap">
+                <img id="mateMainImage" src="assets/torpedo-suela.png" alt="Mate Torpedo cincelado joyero" class="main-product-image zoomable" data-zoom-src="assets/torpedo-suela.png" />
+                <span class="stock-badge" id="mateStockBadge" hidden>Sin stock</span>
+              </div>
+              <div class="thumbs" id="mateThumbs">
+                <button class="thumb active" data-image="assets/torpedo-suela.png" data-color-name="Suela"><img src="assets/torpedo-suela.png" alt="Color suela" /></button>
+                <button class="thumb" data-image="assets/torpedo-borravino.png" data-color-name="Borravino"><img src="assets/torpedo-borravino.png" alt="Color borravino" /></button>
+                <button class="thumb" data-image="assets/torpedo-chocolate.png" data-color-name="Chocolate"><img src="assets/torpedo-chocolate.png" alt="Color chocolate" /></button>
+                <button class="thumb" data-image="assets/torpedo-negro.png" data-color-name="Negro"><img src="assets/torpedo-negro.png" alt="Color negro" /></button>
+              </div>
+            </div>
+            <div class="product-content">
+              <p class="product-tag">Mate premium</p>
+              <h3>Torpedo cincelado joyero</h3>
+              <p class="product-description">
+                Mate torpedo de primera calidad con terminación cincelada y un estilo fuerte, clásico y elegante.
+              </p>
+              <strong class="product-price">$60.000</strong>
+
+              <label class="field-label" for="mateColorSelect">Elegí color</label>
+              <select id="mateColorSelect">
+                <option value="Suela">Suela</option>
+                <option value="Borravino">Borravino</option>
+                <option value="Chocolate">Chocolate</option>
+                <option value="Negro">Negro</option>
+              </select>
+
+              <label class="field-label" for="mateQty">Cantidad</label>
+              <div class="qty-row">
+                <input type="number" id="mateQty" min="1" value="1" />
+                <button class="btn add-to-cart" data-product-id="torpedo-joyero" id="mateAddButton">Agregar al carrito</button>
+              </div>
+              <p class="stock-message" id="mateStockMessage" aria-live="polite"></p>
+            </div>
+          </article>
+
+          <article class="product-card" data-product-type="bombillon">
+            <div class="product-image-frame tall">
+              <div class="image-wrap">
+                <img src="assets/bombillon-anilla-simple.png" alt="Bombillón anilla simple" class="simple-product-image zoomable" data-zoom-src="assets/bombillon-anilla-simple.png" />
+                <span class="stock-badge" id="bombillonSimpleStockBadge" hidden>Sin stock</span>
+              </div>
+            </div>
+            <div class="product-content">
+              <p class="product-tag">Bombillón</p>
+              <h3>Bombillón anilla simple</h3>
+              <p class="product-description">
+                Disponible con pico de bronce. Podés elegirlo en formato curvo o recto.
+              </p>
+              <strong class="product-price">$30.000</strong>
+
+              <label class="field-label" for="bombillonSimpleShapeSelect">Formato</label>
+              <select id="bombillonSimpleShapeSelect">
+                <option value="Curvo">Curvo</option>
+                <option value="Recto">Recto</option>
+              </select>
+
+              <label class="field-label" for="bombillonSimpleTipSelect">Pico</label>
+              <select id="bombillonSimpleTipSelect">
+                <option value="Bronce">Bronce</option>
+              </select>
+
+              <label class="field-label" for="bombillonSimpleQty">Cantidad</label>
+              <div class="qty-row">
+                <input type="number" id="bombillonSimpleQty" min="1" value="1" />
+                <button class="btn add-to-cart" data-product-id="bombillon-simple" id="bombillonSimpleAddButton">Agregar al carrito</button>
+              </div>
+              <p class="stock-message" id="bombillonSimpleStockMessage" aria-live="polite"></p>
+            </div>
+          </article>
+
+          <article class="product-card" data-product-type="bombillon">
+            <div class="product-image-frame tall">
+              <div class="image-wrap">
+                <img src="assets/bombillon-cincelado-premium-ancho.png" alt="Bombillón cincelado premium ancho" class="simple-product-image zoomable" data-zoom-src="assets/bombillon-cincelado-premium-ancho.png" />
+                <span class="stock-badge" id="bombillonPremiumStockBadge" hidden>Sin stock</span>
+              </div>
+            </div>
+            <div class="product-content">
+              <p class="product-tag">Bombillón premium</p>
+              <h3>Bombillón cincelado premium ancho</h3>
+              <p class="product-description">
+                Disponible únicamente en formato curvo, con pico de bronce o alpaca.
+              </p>
+              <strong class="product-price">$32.000</strong>
+
+              <label class="field-label" for="bombillonPremiumShapeSelect">Formato</label>
+              <select id="bombillonPremiumShapeSelect">
+                <option value="Curvo">Curvo</option>
+              </select>
+
+              <label class="field-label" for="bombillonPremiumTipSelect">Pico</label>
+              <select id="bombillonPremiumTipSelect">
+                <option value="Bronce">Bronce</option>
+                <option value="Alpaca">Alpaca</option>
+              </select>
+
+              <label class="field-label" for="bombillonPremiumQty">Cantidad</label>
+              <div class="qty-row">
+                <input type="number" id="bombillonPremiumQty" min="1" value="1" />
+                <button class="btn add-to-cart" data-product-id="bombillon-premium" id="bombillonPremiumAddButton">Agregar al carrito</button>
+              </div>
+              <p class="stock-message" id="bombillonPremiumStockMessage" aria-live="polite"></p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about-section" id="quienes-somos">
+      <div class="container split-layout">
+        <div>
+          <p class="eyebrow">Quiénes somos</p>
+          <h2>Una marca nacida desde la amistad y la tradición.</h2>
+          <p class="big-quote">
+            “La Cebada nace entre dos amigos unidos por una tradición bien argentina: compartir un buen mate. Calidad, estilo y momentos que se disfrutan mejor en ronda”.
+          </p>
+        </div>
+        <div class="founders-card">
+          <img src="assets/quienes-somos-fundadores.jpg" alt="Fundadores de La Cebada" class="founders-photo zoomable" data-zoom-src="assets/quienes-somos-fundadores.jpg" />
+          <p>
+            Detrás de La Cebada hay una idea simple: elegir productos con identidad, presencia y calidad para que el mate siga siendo ese ritual cotidiano que une a la gente.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="por-que">
+      <div class="container split-layout why-layout">
+        <div>
+          <p class="eyebrow">Por qué elegirnos</p>
+          <h2>Tradición, criterio y productos bien elegidos.</h2>
+          <p class="highlight-copy">
+            EN LA CEBADA SENTIMOS UNA GRAN PASIÓN POR LA TRADICIÓN ARGENTINA Y TRABAJAMOS CON PRODUCTOS SELECCIONADOS QUE COMBINAN UN ESTILO CLÁSICO CON LO MODERNO PARA QUE CADA MATE FORME PARTE DE TU RUTINA.
+          </p>
+        </div>
+        <div class="benefits-grid">
+          <article class="benefit-card">
+            <span>01</span>
+            <h3>Primera calidad</h3>
+            <p>Priorizamos productos seleccionados, con presencia y terminaciones cuidadas.</p>
+          </article>
+          <article class="benefit-card">
+            <span>02</span>
+            <h3>Atención directa</h3>
+            <p>Te respondemos en el mismo día por WhatsApp, incluso fines de semana.</p>
+          </article>
+          <article class="benefit-card">
+            <span>03</span>
+            <h3>Compra asistida</h3>
+            <p>Armás el carrito online, completás tus datos y coordinamos pago y envío sin vueltas.</p>
+          </article>
+          <article class="benefit-card">
+            <span>04</span>
+            <h3>Envíos a todo el país</h3>
+            <p>Despachamos por Correo Argentino para que tu pedido llegue a cualquier punto del país.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shipping-section" id="envios">
+      <div class="container shipping-card">
+        <div>
+          <p class="eyebrow">Envíos y pagos</p>
+          <h2>Hacemos envíos a todo el país.</h2>
+          <p>
+            Trabajamos con Correo Argentino. Cuando finalices tu carrito, te llevamos a WhatsApp para coordinar el pago por transferencia bancaria, el tipo de envío y cualquier consulta adicional.
+          </p>
+          <p class="shipping-note">Importante: respondemos tus preguntas el mismo día, sin importar qué día de la semana sea.</p>
+        </div>
+        <div class="social-links">
+          <a href="https://www.instagram.com/lacebada_ok/" target="_blank" rel="noopener">Instagram: @lacebada_ok</a>
+          <a href="https://www.tiktok.com/@la.cebada26" target="_blank" rel="noopener">TikTok: @la.cebada26</a>
+          <a href="mailto:lacebada2026@gmail.com">Email: lacebada2026@gmail.com</a>
+          <a href="https://wa.me/541150373123" target="_blank" rel="noopener">WhatsApp: +54 11 5037-3123</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq-section" id="faq">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Preguntas frecuentes</p>
+          <h2>Dudas comunes antes de comprar</h2>
+          <p>Estas son las preguntas que más conviene responder para que el cliente compre con confianza.</p>
+        </div>
+
+        <div class="faq-grid">
+          <details open>
+            <summary>¿Cómo compro?</summary>
+            <p>Elegí el producto, seleccioná la variante, agregalo al carrito, completá tus datos de envío y tocá “Finalizar compra” para enviarnos el pedido por WhatsApp.</p>
+          </details>
+          <details>
+            <summary>¿Qué medios de pago aceptan?</summary>
+            <p>Por el momento trabajamos con transferencia bancaria. Al finalizar la compra te indicamos los datos para realizar el pago.</p>
+          </details>
+          <details>
+            <summary>¿Hacen envíos?</summary>
+            <p>Sí. Realizamos envíos a todo el país a través de Correo Argentino. Coordinamos los detalles por WhatsApp.</p>
+          </details>
+          <details>
+            <summary>¿Cuándo responden las consultas?</summary>
+            <p>Respondemos en el mismo día, sin importar qué día de la semana sea.</p>
+          </details>
+          <details>
+            <summary>¿Qué pasa si una variante queda sin stock?</summary>
+            <p>La web la marca como “sin stock” y no permite agregar más unidades de esa variante al carrito.</p>
+          </details>
+          <details>
+            <summary>¿Puedo elegir color o formato?</summary>
+            <p>Sí. En cada producto podés elegir las variantes disponibles: color del mate, formato del bombillón o tipo de pico según corresponda.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta-section" id="contacto">
+      <div class="container cta-card">
+        <div>
+          <p class="eyebrow">Contacto</p>
+          <h2>¿Querés comprar o hacer una consulta?</h2>
+          <p>
+            Si necesitás ayuda para elegir un producto, conocer disponibilidad o coordinar envío, escribinos por WhatsApp y te respondemos en el día.
+          </p>
+          <p class="contact-email">También podés contactarnos por mail: <a href="mailto:lacebada2026@gmail.com">lacebada2026@gmail.com</a></p>
+        </div>
+        <div class="cta-actions">
+          <a href="https://wa.me/541150373123?text=Hola%2C%20quiero%20hacer%20una%20consulta%20sobre%20La%20Cebada" class="btn whatsapp-btn" target="_blank" rel="noopener">
+            <span class="whatsapp-mark" aria-hidden="true"></span>
+            Hablar por WhatsApp
+          </a>
+          <button class="btn btn-ghost" type="button" id="scrollToProducts">Seguir comprando</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <div>
+        <strong>La Cebada</strong>
+        <p>Ritual Matero · Tradición argentina, estilo y calidad.</p>
+      </div>
+      <div>
+        <p>© <span id="year"></span> La Cebada. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="floating-cart" type="button" id="floatingCartButton" aria-label="Abrir carrito">
+    <img src="assets/cart-icon.png" alt="" />
+    <strong>Carrito</strong>
+    <span id="floatingCartCount">0</span>
+  </button>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="cart-header">
+      <div>
+        <p class="eyebrow">Tu pedido</p>
+        <h2>Carrito</h2>
+      </div>
+      <button class="close-cart" id="closeCartButton" aria-label="Cerrar carrito">✕</button>
+    </div>
+
+    <div class="cart-body">
+      <div id="cartItems" class="cart-items"></div>
+      <div class="empty-cart" id="emptyCartMessage">
+        <p>Tu carrito está vacío por ahora.</p>
+        <small>Agregá productos, completá tus datos y después coordinamos pago y envío por WhatsApp.</small>
+      </div>
+
+      <form class="checkout-form" id="checkoutForm">
+        <h3>Datos para el envío</h3>
+        <p>Completá estos datos para que podamos preparar la compra y coordinar el envío.</p>
+
+        <label>
+          Nombre y apellido
+          <input type="text" name="nombre" placeholder="Ej: Juan Pérez" required />
+        </label>
+
+        <label>
+          Teléfono
+          <input type="tel" name="telefono" placeholder="Ej: 11 5037 3123" required />
+        </label>
+
+        <label>
+          Email
+          <input type="email" name="email" placeholder="tuemail@gmail.com" required />
+        </label>
+
+        <div class="form-grid">
+          <label>
+            Provincia
+            <input type="text" name="provincia" placeholder="Ej: Buenos Aires" required />
+          </label>
+
+          <label>
+            Localidad
+            <input type="text" name="localidad" placeholder="Ej: San Isidro" required />
+          </label>
+        </div>
+
+        <label>
+          Código postal
+          <input type="text" name="cp" placeholder="Ej: 1642" required />
+        </label>
+
+        <label>
+          Dirección de entrega
+          <input type="text" name="direccion" placeholder="Calle, número, piso/depto" required />
+        </label>
+      </form>
+    </div>
+
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total estimado</span>
+        <strong id="cartTotal">$0</strong>
+      </div>
+      <button class="btn checkout-whatsapp" id="checkoutWhatsappButton" type="button">
+        <span class="whatsapp-mark" aria-hidden="true"></span>
+        Finalizar Compra
+      </button>
+      <p class="checkout-note">El botón abre WhatsApp con el pedido y tus datos listos para enviar.</p>
+    </div>
+  </aside>
+
+  <div class="cart-backdrop" id="cartBackdrop"></div>
+
+  <div class="image-modal" id="imageModal" aria-hidden="true">
+    <button class="image-modal-close" id="imageModalClose" aria-label="Cerrar imagen ampliada">✕</button>
+    <img src="" alt="" id="imageModalImg" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
